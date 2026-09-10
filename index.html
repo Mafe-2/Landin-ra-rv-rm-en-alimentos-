@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodXR | Realidad Virtual, Aumentada y Mixta en Ingeniería de Alimentos</title>
+  <meta name="description" content="Plataforma interactiva de Realidad Virtual (VR), Realidad Aumentada (AR) y Realidad Mixta (MR) dedicada a la transformación y optimización en la Ingeniería de Alimentos.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- ==========================================
+         MENÚ LATERAL IZQUIERDO (SIDEBAR)
+         ========================================== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="brand-logo">
+          <div class="logo-icon">XR</div>
+          <span class="brand-text">Food<span>XR</span></span>
+        </div>
+        <button class="toggle-sidebar-btn" id="toggleSidebarBtn" aria-label="Contraer o desplegar menú">
+          <span id="toggleIcon">◀</span>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#hero" class="nav-item active" id="nav-hero">
+          <span class="nav-icon">🚀</span>
+          <span class="nav-text">Inicio</span>
+        </a>
+        <a href="#vr" class="nav-item" id="nav-vr">
+          <span class="nav-icon">🥽</span>
+          <span class="nav-text">Realidad Virtual (VR)</span>
+        </a>
+        <a href="#ar" class="nav-item" id="nav-ar">
+          <span class="nav-icon">📱</span>
+          <span class="nav-text">Realidad Aumentada (AR)</span>
+        </a>
+        <a href="#mr" class="nav-item" id="nav-mr">
+          <span class="nav-icon">👓</span>
+          <span class="nav-text">Realidad Mixta (MR)</span>
+        </a>
+        <a href="#soluciones" class="nav-item" id="nav-soluciones">
+          <span class="nav-icon">🏭</span>
+          <span class="nav-text">Soluciones Industriales</span>
+        </a>
+        <a href="#casos" class="nav-item" id="nav-casos">
+          <span class="nav-icon">🏆</span>
+          <span class="nav-text">Casos de Éxito</span>
+        </a>
+        <a href="#simulador" class="nav-item" id="nav-simulador">
+          <span class="nav-icon">🎮</span>
+          <span class="nav-text">Simulador Interactivo</span>
+        </a>
+        <a href="#contacto" class="nav-item" id="nav-contacto">
+          <span class="nav-icon">✉️</span>
+          <span class="nav-text">Contacto</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="tech-badge">
+          <div class="pulse-dot"></div>
+          <span class="sidebar-footer-text">Planta Virtual Conectada</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ==========================================
+         ÁREA DE CONTENIDO PRINCIPAL
+         ========================================== -->
+    <div class="main-content">
+      
+      <!-- HEADER SUPERIOR DE CONTROL -->
+      <header class="top-header">
+        <div class="search-bar">
+          <span>🔍</span>
+          <input type="text" id="searchInput" placeholder="Buscar módulo o solución industrial...">
+        </div>
+
+        <div class="header-actions">
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Cambiar tema claro u oscuro">
+            <span id="themeIcon">🌙</span>
+            <span id="themeText">Modo Oscuro</span>
+          </button>
+          <a href="#contacto" class="cta-header-btn">Solicitar Demo</a>
+        </div>
+      </header>
+
+      <!-- SECCIÓN HERO -->
+      <section class="section hero-section" id="hero">
+        <div class="hero-text">
+          <span class="tagline vr">Ingeniería de Alimentos 4.0</span>
+          <h1 class="hero-title">El Futuro Inmersivo de la <span class="gradient-text">Industria Alimentaria</span></h1>
+          <p class="hero-description">
+            Revoluciona el diseño de plantas agroindustriales, la inspección térmica en tiempo real y el control de calidad nutricional mediante simulaciones avanzadas de VR, AR y MR.
+          </p>
+          <div class="hero-actions">
+            <a href="#simulador" class="btn-primary">
+              <span>Probar Simulador</span>
+              <span>➔</span>
+            </a>
+            <a href="#soluciones" class="btn-secondary">
+              <span>Explorar Soluciones</span>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="stat-number">-45%</div>
+              <div class="stat-label">Mermas en Planta</div>
+            </div>
+            <div>
+              <div class="stat-number">3.5x</div>
+              <div class="stat-label">Velocidad de Capacitación</div>
+            </div>
+            <div>
+              <div class="stat-number">99.8%</div>
+              <div class="stat-label">Precisión de Inspección</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="preview-card">
+            <img src="assets/images/vr_food_factory.jpg" alt="Simulación en Realidad Virtual de Planta de Alimentos" class="preview-image">
+            <div class="preview-badge">
+              <span class="pulse-dot"></span>
+              <span>Gemelo Digital Activo</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECNOLOGÍAS CLAVE (VR / AR / MR) -->
+      <section class="section" id="tecnologias">
+        <div class="section-header">
+          <span class="tagline food">Tres Dimensiones Inmersivas</span>
+          <h2 class="section-title">Tecnologías Inmersivas en Alimentos</h2>
+          <p class="section-subtitle">Aplica el poder de la realidad virtual, aumentada y mixta en cada etapa de la cadena de valor alimentaria.</p>
+        </div>
+
+        <div class="tech-grid">
+          <!-- CARD VR -->
+          <div class="tech-card vr" id="vr">
+            <div class="card-icon-box">🥽</div>
+            <h3 class="tech-card-title">Realidad Virtual (VR)</h3>
+            <p class="tech-card-desc">Simulación 3D inmersiva completa para el entrenamiento de personal en normas HACCP y prototipado virtual de líneas de empaque.</p>
+            <ul class="tech-card-features">
+              <li>Capacitación en inocuidad sin riesgos</li>
+              <li>Diseño ergonómico de plantas lácteas</li>
+              <li>Pruebas virtuales de pasteurización</li>
+            </ul>
+            <a href="#simulador" class="btn-secondary" style="margin-top:auto;">Ver Simulación VR</a>
+          </div>
+
+          <!-- CARD AR -->
+          <div class="tech-card ar" id="ar">
+            <div class="card-icon-box">📱</div>
+            <h3 class="tech-card-title">Realidad Aumentada (AR)</h3>
+            <p class="tech-card-desc">Superposición de capas de datos térmicos y microbiológicos directamente sobre la línea de producción y empaque.</p>
+            <ul class="tech-card-features">
+              <li>Mantenimiento guiado por visión AR</li>
+              <li>Control térmico de la cadena de frío</li>
+              <li>Auditorías de calidad en tiempo real</li>
+            </ul>
+            <a href="#simulador" class="btn-secondary" style="margin-top:auto;">Ver Inspección AR</a>
+          </div>
+
+          <!-- CARD MR -->
+          <div class="tech-card mr" id="mr">
+            <div class="card-icon-box">👓</div>
+            <h3 class="tech-card-title">Realidad Mixta (MR)</h3>
+            <p class="tech-card-desc">Interacción híbrida entre elementos físicos y holográficos 3D para el desarrollo de alimentos y manipulación de fórmulas.</p>
+            <ul class="tech-card-features">
+              <li>Modelado molecular de proteínas 3D</li>
+              <li>Telemetría holográfica sobre tanques</li>
+              <li>I+D de fórmulas colaborativo</li>
+            </ul>
+            <a href="#simulador" class="btn-secondary" style="margin-top:auto;">Ver Holograma MR</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHOWCASE DETALLADO CON IMÁGENES -->
+      <section class="section">
+        <!-- SHOWCASE AR -->
+        <div class="showcase-block">
+          <div class="showcase-img-wrap">
+            <img src="assets/images/ar_quality_control.jpg" alt="Control de Calidad AR en Alimentos" class="showcase-img">
+          </div>
+          <div class="showcase-info">
+            <span class="tagline ar">Inspección Inteligente</span>
+            <h3>Control de Calidad Térmico con Realidad Aumentada</h3>
+            <p>Visualiza en tiempo real variaciones de temperatura, pesos y sellado hermético en bandejas de alimentos mediante lentes de realidad aumentada. Los operadores identifican desvisaciones al instante antes de que el producto abandone la planta.</p>
+          </div>
+        </div>
+
+        <!-- SHOWCASE MR -->
+        <div class="showcase-block reverse">
+          <div class="showcase-img-wrap">
+            <img src="assets/images/mr_molecular_food.jpg" alt="Ingeniería Molecular MR" class="showcase-img">
+          </div>
+          <div class="showcase-info">
+            <span class="tagline mr">Innovación Formulativa</span>
+            <h3>Diseño Molecular de Alimentos en Realidad Mixta</h3>
+            <p>Permite a los ingenieros de alimentos manipular la conformación de proteínas vegetales, emulsiones y texturas mediante holografía 3D interactiva, acelerando la creación de productos análogos de carne y lácteos.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATÁLOGO DE SOLUCIONES INDUSTRIALES -->
+      <section class="section" id="soluciones">
+        <div class="section-header">
+          <span class="tagline food">Módulos Especializados</span>
+          <h2 class="section-title">Catálogo de Soluciones Industriales</h2>
+          <p class="section-subtitle">Herramientas inmersivas desarrolladas específicamente para los desafíos de la ingeniería de alimentos.</p>
+        </div>
+
+        <div class="catalog-filters">
+          <button class="filter-btn active" data-filter="all">Todos los Módulos</button>
+          <button class="filter-btn" data-filter="pasteurizacion">Pasteurización & Esterilización</button>
+          <button class="filter-btn" data-filter="frio">Cadena de Frío AR</button>
+          <button class="filter-btn" data-filter="empaque">Empaque & Embotellado</button>
+          <button class="filter-btn" data-filter="biorreactores">Biorreactores MR</button>
+        </div>
+
+        <div class="solutions-grid" id="solutionsGrid">
+          <!-- Solución 1 -->
+          <div class="solution-card" data-category="pasteurizacion">
+            <div class="solution-icon">🔥</div>
+            <div class="solution-content">
+              <h4>Simulador Térmico de UHT y Pasteurización VR</h4>
+              <p>Entrenamiento inmersivo para el ajuste de curvas F0, tiempos de retención y curvas de inactivación enzimática en leche y jugos.</p>
+              <div class="solution-meta">
+                <span class="meta-chip">Realidad Virtual</span>
+                <span class="meta-chip">Procesos Térmicos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Solución 2 -->
+          <div class="solution-card" data-category="frio">
+            <div class="solution-icon">❄️</div>
+            <div class="solution-content">
+              <h4>Monitor de Cadena de Frío AR HUD</h4>
+              <p>Superposición térmica inteligente para almacenes frigoríficos y contenedores de transporte en tiempo real.</p>
+              <div class="solution-meta">
+                <span class="meta-chip">Realidad Aumentada</span>
+                <span class="meta-chip">Logística Refrigerada</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Solución 3 -->
+          <div class="solution-card" data-category="empaque">
+            <div class="solution-icon">📦</div>
+            <div class="solution-content">
+              <h4>Gemelo Digital de Embotellado MR</h4>
+              <p>Visualización holográfica de la dinámica de fluidos y micro-fugas en sellado de botellas y latas a alta velocidad.</p>
+              <div class="solution-meta">
+                <span class="meta-chip">Realidad Mixta</span>
+                <span class="meta-chip">Envasado 4.0</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Solución 4 -->
+          <div class="solution-card" data-category="biorreactores">
+            <div class="solution-icon">🧪</div>
+            <div class="solution-content">
+              <h4>Asistente Holográfico de Biorreactores</h4>
+              <p>Control por gestos de variables de fermentación (pH, oxígeno disuelto, agitación) para yogur, cerveza y proteínas recombinantes.</p>
+              <div class="solution-meta">
+                <span class="meta-chip">Realidad Mixta</span>
+                <span class="meta-chip">Biotecnología</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CASOS DE ÉXITO -->
+      <section class="section" id="casos">
+        <div class="section-header">
+          <span class="tagline ar">Resultados Comprobados</span>
+          <h2 class="section-title">Casos de Éxito en la Industria de Alimentos</h2>
+          <p class="section-subtitle">Empresas líderes que han transformado sus plantas procesadoras con FoodXR.</p>
+        </div>
+
+        <div class="cases-grid">
+          <!-- Caso 1 -->
+          <div class="case-card">
+            <div class="case-company">Global Dairy Corp</div>
+            <div class="case-metric">-45%</div>
+            <h3 class="case-title">Reducción de Fallas en Líneas UHT</h3>
+            <p class="case-desc">Implementación de guías de mantenimiento AR para técnicos de mantenimiento en válvulas asépticas y homogeneizadores.</p>
+          </div>
+
+          <!-- Caso 2 -->
+          <div class="case-card">
+            <div class="case-company">NutriFresh Agro</div>
+            <div class="case-metric">60%</div>
+            <h3 class="case-title">Aceleración en Capacitación HACCP</h3>
+            <p class="case-desc">Entrenamiento en simuladores VR de sanitización y prevención de contaminación cruzada sin detener la producción real.</p>
+          </div>
+
+          <!-- Caso 3 -->
+          <div class="case-card">
+            <div class="case-company">BioBrew Craft</div>
+            <div class="case-metric">+28%</div>
+            <h3 class="case-title">Eficiencia en Formulación MR</h3>
+            <p class="case-desc">Uso de holografía 3D para el seguimiento de levaduras y perfiles aromáticos en fermentadores de gran capacidad.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SIMULADOR INTERACTIVO -->
+      <section class="section" id="simulador">
+        <div class="section-header">
+          <span class="tagline vr">Demostración en Tiempo Real</span>
+          <h2 class="section-title">Simulador Interactivo de Planta</h2>
+          <p class="section-subtitle">Prueba los modos de inspección AR, simulación VR y holografía MR directamente en tu navegador.</p>
+        </div>
+
+        <div class="simulator-container">
+          <div class="simulator-toolbar">
+            <div class="sim-controls">
+              <button class="sim-btn active" id="simModeAR" data-mode="ar">
+                <span>📱 Moda AR</span>
+              </button>
+              <button class="sim-btn" id="simModeVR" data-mode="vr">
+                <span>🥽 Modo VR</span>
+              </button>
+              <button class="sim-btn" id="simModeMR" data-mode="mr">
+                <span>👓 Modo MR</span>
+              </button>
+            </div>
+            <div>
+              <button class="sim-btn" id="resetSimBtn">🔄 Reiniciar Simulación</button>
+            </div>
+          </div>
+
+          <div class="sim-screen">
+            <canvas id="simCanvas"></canvas>
+            <div class="sim-overlay-hud" id="simHud">
+              <div>[SISTEMA]: ACTIVO</div>
+              <div>MODO: <span id="hudModeText" style="color:var(--accent-ar);">INSPECCIÓN AR</span></div>
+              <div>LINEA: EMPAQUE TÉRMICO #04</div>
+              <div>TEMP PROMEDIO: <span id="hudTempText">4.2 °C</span></div>
+              <div>ESTADO: <span style="color:#10b981;">OPTIMO (PASO HACCP)</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMULARIO DE CONTACTO -->
+      <section class="section" id="contacto">
+        <div class="section-header">
+          <span class="tagline food">Transforma Tu Planta</span>
+          <h2 class="section-title">Solicita una Demostración Personalizada</h2>
+          <p class="section-subtitle">Nuestros especialistas en ingeniería de alimentos y tecnologías XR adaptarán la plataforma a tus instalaciones.</p>
+        </div>
+
+        <div class="contact-card">
+          <form id="contactForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="contactName">Nombre Completo</label>
+                <input type="text" id="contactName" placeholder="Ej. Dra. Carmen Silva" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Correo Corporativo</label>
+                <input type="email" id="contactEmail" placeholder="csilva@empresaalimentos.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactCompany">Empresa / Universidad</label>
+                <input type="text" id="contactCompany" placeholder="Ej. Lácteos del Valle" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactInterest">Tecnología de Interés</label>
+                <select id="contactInterest">
+                  <option value="vr">Realidad Virtual (VR) - Entrenamiento</option>
+                  <option value="ar">Realidad Aumentada (AR) - Inspección & Cadena Frío</option>
+                  <option value="mr">Realidad Mixta (MR) - I+D Molecular</option>
+                  <option value="suite">Suite Completa Industrial</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="contactMessage">Detalles del Proyecto o Planta</label>
+                <textarea id="contactMessage" rows="4" placeholder="Describe brevemente tus procesos (ej. embotellado, pasteurización, almacenamiento refrigerado)..." required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+              <span>Enviar Solicitud de Demostración</span>
+              <span>🚀</span>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div>
+            <strong>FoodXR Technologies</strong> &copy; 2026 — Realidad Virtual, Aumentada y Mixta aplicada a la Ingeniería de Alimentos.
+          </div>
+          <div>
+            Diseño Minimalista e Interactivo
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
